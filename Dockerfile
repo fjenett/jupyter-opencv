@@ -27,6 +27,9 @@ RUN apt install -y libopencv-dev python3-opencv
 # Install git
 RUN apt-get -y install git
 
+# Install wget and curl
+RUN apt-get -y install wget curl
+
 # Install python packages for data science
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
