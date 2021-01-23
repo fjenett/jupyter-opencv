@@ -22,7 +22,7 @@ RUN pip3 install --upgrade pip
 # RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1
 
 # Install OpenCV latest
-RUN apt install -y libopencv-dev python3-opencv
+RUN pip install opencv-python
 
 # Install git
 RUN apt-get -y install git
