@@ -43,7 +43,7 @@ RUN echo >/playground/WARNING:\ Any\ modification\ might\ be\ lost\ at\ containe
 
 ENV PYTHONPATH /playground
 WORKDIR /playground
-CMD ["jupyter", "notebook", "--allow-root", "--ip=0.0.0.0", "--NotebookApp.token=", "/playground"]
+CMD ["jupyter", "lab", "--allow-root", "--ip=0.0.0.0", "--NotebookApp.token=", "/playground"]
 
 EXPOSE 8888/tcp
 
